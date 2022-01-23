@@ -1,5 +1,5 @@
 import { BsTwitter, BsInstagram, BsGithub } from "react-icons/bs";
-import { ImFacebook } from "react-icons/im";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -11,36 +11,46 @@ const Footer = () => {
           className="mx-auto h-8 w-auto"
         />
         <nav className="flex sm:flex-row flex-col items-center justify-center flex-wrap mt-14 sm:space-x-16 space-y-4 sm:space-y-0">
-          <a
-            href="/"
-            className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1"
-          >
-            About
-          </a>
-          <a
-            href="/"
-            className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1"
-          >
-            Features
-          </a>
-          <a
-            href="/"
-            className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1"
-          >
-            Works
-          </a>
-          <a
-            href="/"
-            className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1"
-          >
-            Support
-          </a>
-          <a
-            href="/"
-            className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1"
-          >
-            Help
-          </a>
+          <Link href="/">
+            <a className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1">
+              About
+            </a>
+          </Link>
+          <Link href="/">
+            <a
+              href="/"
+              className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1"
+            >
+              Features
+            </a>
+          </Link>
+
+          <Link href="/">
+            <a
+              href="/"
+              className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1"
+            >
+              Works
+            </a>
+          </Link>
+
+          <Link href="/">
+            <a
+              href="/"
+              className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1"
+            >
+              Support
+            </a>
+          </Link>
+
+          <Link href="/">
+            <a
+              href="/"
+              className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1"
+            >
+              Help
+            </a>
+          </Link>
         </nav>
         <div className="mt-12">
           <svg

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import SignWithGithub from "../components/UI/SignWithGithub";
 import SignWithGoogle from "../components/UI/SignWithGoogle";
@@ -77,7 +78,7 @@ const signup = () => {
                 </div>
               </form>
               <svg
-                class="mx-auto mt-8 w-auto h-4 text-zinc-400"
+                className="mx-auto mt-8 w-auto h-4 text-zinc-400"
                 viewBox="0 0 172 16"
                 fill="none"
                 stroke="currentColor"
@@ -230,9 +231,9 @@ const signup = () => {
               </svg>
               <p className="text-center mt-5 text-zinc-800">
                 Already joined?{" "}
-                <a href="/" className="font-semibold">
-                  Login now
-                </a>
+                <Link href="/">
+                  <a className="font-semibold">Login now</a>
+                </Link>
               </p>
             </div>
           </div>

@@ -219,9 +219,9 @@ const SignUpForm = () => {
               </svg>
               <p className="text-center mt-5 text-zinc-800">
                 Already joined?{" "}
-                <a href="/" className="font-semibold">
-                  Login now
-                </a>
+                <Link href="/">
+                  <a className="font-semibold">Login now</a>
+                </Link>
               </p>
             </div>
           </div>
