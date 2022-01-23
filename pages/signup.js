@@ -1,13 +1,24 @@
-import SignWithGithub from "./UI/SignWithGithub";
-import SignWithGoogle from "./UI/SignWithGoogle";
+import React from "react";
+import SignWithGithub from "../components/UI/SignWithGithub";
+import SignWithGoogle from "../components/UI/SignWithGoogle";
 
-const SignUpForm = () => {
+const signup = () => {
   return (
-    <section className="lg:py-10 md:py-6 sm:py-5 pt-2.5 pb-10 relative flex-1 bg-zinc-50">
+    <section className="lg:py-20 sm:py-16 py-12 bg-zinc-50 dark:bg-zinc-900 relative">
+      <div className="absolute inset-0 overflow-hidden">
+        <img
+          src="https://cdn.rareblocks.xyz/collection/clarity/images/features/6/background-pattern.png"
+          alt=""
+          className="h-full w-full rotate-180 object-cover transform object-bottom opacity-10"
+        />
+      </div>
       <div className="max-w-7xl mx-auto lg:px-8 sm:px-6 px-4">
-        <div className="max-w-md mx-auto lg:max-w-xl relative border-2 rounded-2xl">
-          <div className="relative lg:rounded-3xl rounded-2xl  overflow-hidden">
-            <div className="sm:px-10 sm:py-4 px-6">
+        <div className="max-w-md mx-auto lg:max-w-xl mt-10 relative ">
+          <div className="absolute inset-x-[0.375rem] top-8 -bottom-4">
+            <div className="gradient mx-auto w-full h-full rotate-180 rounded-3xl blur-xl filter opacity-80"></div>
+          </div>
+          <div className="relative lg:rounded-3xl border-2 rounded-2xl bg-zinc-100 overflow-hidden">
+            <div className="sm:px-10 sm:py-12 pt-7 px-6">
               <div className="text-center">
                 <h1 className="text-zinc-900 text-3xl sm:text-4xl lg:text-5xl font-semibold">
                   Make your business successful fast
@@ -21,7 +32,7 @@ const SignUpForm = () => {
                 </div>
                 <a
                   href="/"
-                  className="mt-3 text-center text-sm text-zinc-600 block"
+                  className="mt-8 text-center text-sm text-zinc-600 block"
                 >
                   or sign up with email
                 </a>
@@ -66,7 +77,7 @@ const SignUpForm = () => {
                 </div>
               </form>
               <svg
-                className="mx-auto mt-8 w-auto h-4 text-zinc-400"
+                class="mx-auto mt-8 w-auto h-4 text-zinc-400"
                 viewBox="0 0 172 16"
                 fill="none"
                 stroke="currentColor"
@@ -231,4 +242,4 @@ const SignUpForm = () => {
   );
 };
 
-export default SignUpForm;
+export default signup;

@@ -1,9 +1,10 @@
-import SignIn from "../components/SignIn";
+import App from "../components/App";
+import Landing from "../components/Landing";
 
 export default function Home() {
   return (
-    <div>
-      <SignIn />
-    </div>
+    <>
+      <App />
+    </>
   );
 }

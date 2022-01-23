@@ -3,14 +3,14 @@ import { ImFacebook } from "react-icons/im";
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-50 lg:py-20 sm:py-16 py-12">
+    <footer className="bg-zinc-50 lg:py-20 sm:py-16 pt-5 pb-12  border-t">
       <div className="max-w-7xl mx-auto lg:px-8 sm:px-6 px-4">
         <img
           src="https://cdn.rareblocks.xyz/collection/clarity/images/logo.svg"
           alt=""
           className="mx-auto h-8 w-auto"
         />
-        <nav className="flex items-center justify-center flex-wrap mt-14 space-x-16">
+        <nav className="flex sm:flex-row flex-col items-center justify-center flex-wrap mt-14 sm:space-x-16 space-y-4 sm:space-y-0">
           <a
             href="/"
             className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1"
