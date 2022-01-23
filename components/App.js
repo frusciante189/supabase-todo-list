@@ -4,8 +4,14 @@ import { useUser } from "../context/context";
 import Todo from "./UI/Todo";
 
 const App = () => {
-  const { addTodo, setErrorText, newTaskText, setNextTaskText, todos } =
-    useUser();
+  const {
+    addTodo,
+    setErrorText,
+    newTaskText,
+    setNextTaskText,
+    todos,
+    deleteTodo,
+  } = useUser();
   return (
     <div className="bg-zinc-50 lg:py-20 sm:py-16 py-12">
       <div className="text-center">
@@ -35,7 +41,13 @@ const App = () => {
           </div>
           <div className="mt-10 space-y-2">
             {todos.map((todo) => {
-              return <Todo key={todo.id} todo={todo} />;
+              return (
+                <Todo
+                  key={todo.id}
+                  todo={todo}
+                  deleteTodo={() => deleteTodo(todo.id)}
+                />
+              );
             })}
           </div>
         </div>

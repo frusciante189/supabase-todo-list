@@ -25,7 +25,19 @@ const Provider = ({ children }) => {
         .insert({ task, user_id: supabase.auth.user().id })
         .single();
       if (error) setErrorText(error.message);
-      else setTodos([...todos, todo]);
+      else {
+        setTodos([...todos, todo]);
+        setNextTaskText("");
+      }
+    }
+  };
+
+  const deleteTodo = async (id) => {
+    try {
+      await supabase.from("todos").delete().eq("id", id);
+      setTodos(todos.filter((todo) => todo.id != id));
+    } catch (error) {
+      console.log("error", error);
     }
   };
 
@@ -40,6 +52,7 @@ const Provider = ({ children }) => {
     setNextTaskText,
     todos,
     setTodos,
+    deleteTodo,
   };
   return <Context.Provider value={exposed}>{children}</Context.Provider>;
 };

@@ -5,11 +5,14 @@ const Footer = () => {
   return (
     <footer className="bg-zinc-50 lg:py-20 sm:py-16 pt-5 pb-12  border-t">
       <div className="max-w-7xl mx-auto lg:px-8 sm:px-6 px-4">
-        <img
-          src="https://cdn.rareblocks.xyz/collection/clarity/images/logo.svg"
-          alt=""
-          className="mx-auto h-8 w-auto"
-        />
+        <Link href="/">
+          <a className="flex items-center justify-center text-2xl tracking-widest font-medium text-zinc-800 text-center">
+            <span className="text-pink-700 font-extrabold text-2xl mr-1">
+              /
+            </span>
+            Frus
+          </a>
+        </Link>
         <nav className="flex sm:flex-row flex-col items-center justify-center flex-wrap mt-14 sm:space-x-16 space-y-4 sm:space-y-0">
           <Link href="/">
             <a className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1">
@@ -17,37 +20,25 @@ const Footer = () => {
             </a>
           </Link>
           <Link href="/">
-            <a
-              href="/"
-              className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1"
-            >
+            <a className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1">
               Features
             </a>
           </Link>
 
           <Link href="/">
-            <a
-              href="/"
-              className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1"
-            >
+            <a className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1">
               Works
             </a>
           </Link>
 
           <Link href="/">
-            <a
-              href="/"
-              className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1"
-            >
+            <a className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1">
               Support
             </a>
           </Link>
 
           <Link href="/">
-            <a
-              href="/"
-              className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1"
-            >
+            <a className="font-medium inline-flex transform text-lg text-zinc-900 transition-all duration-200 ease-in-out hover:text-zinc-600 hover:-translate-y-1">
               Help
             </a>
           </Link>
@@ -207,23 +198,14 @@ const Footer = () => {
           </svg>
         </div>
         <div className="flex items-center justify-center mt-12 space-x-3">
-          <a
-            href="/"
-            className="inline-flex items-center justify-center w-10 h-10 rounded-full text-zinc-900 transition-all ease-in-out duration-200 transform"
-          >
+          <a className="inline-flex items-center justify-center w-10 h-10 rounded-full text-zinc-900 transition-all ease-in-out duration-200 transform">
             <BsTwitter size={24} />
           </a>
 
-          <a
-            href="/"
-            className="inline-flex items-center justify-center w-10 h-10 rounded-full text-zinc-900 transition-all ease-in-out duration-200 transform"
-          >
+          <a className="inline-flex items-center justify-center w-10 h-10 rounded-full text-zinc-900 transition-all ease-in-out duration-200 transform">
             <BsInstagram size={24} />
           </a>
-          <a
-            href="/"
-            className="inline-flex items-center justify-center w-10 h-10 rounded-full text-zinc-900 transition-all ease-in-out duration-200 transform"
-          >
+          <a className="inline-flex items-center justify-center w-10 h-10 rounded-full text-zinc-900 transition-all ease-in-out duration-200 transform">
             <BsGithub size={24} />
           </a>
         </div>

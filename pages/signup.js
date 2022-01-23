@@ -31,10 +31,7 @@ const signup = () => {
                   <SignWithGoogle type="Sign up" />
                   <SignWithGithub type="Sign up" />
                 </div>
-                <a
-                  href="/"
-                  className="mt-8 text-center text-sm text-zinc-600 block"
-                >
+                <a className="mt-8 text-center text-sm text-zinc-600 block">
                   or sign up with email
                 </a>
               </div>

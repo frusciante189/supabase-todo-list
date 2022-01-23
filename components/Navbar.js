@@ -8,11 +8,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex-shrink-0">
             <Link href="/">
-              <a className="flex">
-                <img
-                  src="https://cdn.rareblocks.xyz/collection/clarity/images/logo.svg"
-                  alt=""
-                />
+              <a className="flex items-center text-2xl tracking-widest font-medium text-zinc-800">
+                <span className="text-pink-700 font-extrabold text-2xl mr-1">
+                  /
+                </span>
+                Frus
               </a>
             </Link>
           </div>

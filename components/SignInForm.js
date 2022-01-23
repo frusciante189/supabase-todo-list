@@ -74,10 +74,7 @@ const SignInForm = () => {
                 </label>
               </div>
             </div>
-            <a
-              href="/"
-              className="font-medium text-zinc-500 hover:underline hover:underline-offset-2 hover:text-zinc-900 transition-all duration-200 transform ease-in-out"
-            >
+            <a className="font-medium text-zinc-500 hover:underline hover:underline-offset-2 hover:text-zinc-900 transition-all duration-200 transform ease-in-out">
               Forgot Password?
             </a>
           </div>
