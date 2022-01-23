@@ -12,6 +12,9 @@ const App = () => {
     todos,
     deleteTodo,
   } = useUser();
+
+  const reversed = todos.reverse();
+  console.log(reversed);
   return (
     <div className="bg-zinc-50 lg:py-20 sm:py-16 py-12">
       <div className="text-center">

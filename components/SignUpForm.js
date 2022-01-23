@@ -1,5 +1,6 @@
 import SignWithGithub from "./UI/SignWithGithub";
 import SignWithGoogle from "./UI/SignWithGoogle";
+import Link from "next/link";
 
 const SignUpForm = () => {
   return (
